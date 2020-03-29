@@ -1,6 +1,6 @@
 import json
 from difflib import get_close_matches
-
+print("Hello Volvanoes")
 def definition(word):
     word = word.lower()
     data = json.load(open("data.json"))
@@ -24,6 +24,8 @@ def definition(word):
             return "The word you entered does not exist. Please double check it"
 
 word = input("Enter a word: ")
+
+
 
 output = definition(word)
 
